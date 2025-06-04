@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulation Target Trial Study Plan: Lung Cancer Treatment Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emulation Target Trial Study Plan: Comparing Treatments A and B for Lung Cancer</h1>
+
+        <p>This document outlines a study plan for an emulation target trial designed to compare the effectiveness of two treatments, Treatment A and Treatment B, for lung cancer patients using observational data.</p>
+
+        <h2>1. Introduction and Rationale</h2>
+        <p><strong class="section-title">Background:</strong> Lung cancer remains a leading cause of cancer-related mortality worldwide. While randomized controlled trials (RCTs) are the gold standard for evaluating treatment efficacy, they often face limitations in generalizability, patient recruitment, and long-term follow-up. Observational data, such as electronic health records (EHRs) and administrative claims databases, offer a rich source of real-world evidence.</p>
+
+        <p><strong class="section-title">Rationale for Target Trial Emulation:</strong> Target trial emulation provides a robust framework to leverage observational data to mimic the design and analysis of a hypothetical RCT. This approach helps to minimize common biases in observational studies by explicitly defining the components of an ideal trial, including eligibility criteria, treatment assignment, follow-up, and outcome assessment.</p>
+
+        <p><strong class="section-title">Objective:</strong> To compare the effectiveness of Treatment A versus Treatment B on overall survival and disease progression-free survival in patients with lung cancer, using a target trial emulation approach on observational data.</p>
+
+        <h2>2. Components of the Target Trial</h2>
+        <p>The following components define the hypothetical target trial that this observational study will emulate:</p>
+
+        <h3>2.1. Eligibility Criteria</h3>
+        <ul>
+            <li><strong>Population:</strong> Patients diagnosed with primary lung cancer (specify stage, e.g., Stage III/IV non-small cell lung cancer, if applicable, based on data availability).</li>
+            <li><strong>Age:</strong> $\ge 18$ years.</li>
+            <li><strong>Diagnosis Date:</strong> Patients diagnosed within a specified time window (e.g., January 1, 2010 - December 31, 2023) to ensure data completeness and relevance.</li>
+            <li><strong>Treatment Naivety:</strong> Patients must be treatment-naïve for lung cancer at the time of eligibility (i.e., no prior systemic therapy for lung cancer).</li>
+            <li><strong>Availability of Data:</strong> Sufficient baseline clinical data (e.g., demographics, comorbidities, cancer stage, performance status, laboratory values) and follow-up data (treatment details, outcomes) must be available.</li>
+            <li><strong>Exclusion Criteria:</strong>
+                <ul>
+                    <li>Patients with a history of other active malignancies (excluding adequately treated non-melanoma skin cancer or carcinoma in situ).</li>
+                    <li>Patients with insufficient follow-up data to ascertain treatment initiation or outcomes.</li>
+                    <li>Patients receiving palliative care as the sole initial management strategy.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2.2. Treatment Strategies</h3>
+        <ul>
+            <li><strong>Treatment A:</strong> Defined as initiation of Treatment A within a specified window (e.g., 30 days) after meeting eligibility criteria.</li>
+            <li><strong>Treatment B:</strong> Defined as initiation of Treatment B within a specified window (e.g., 30 days) after meeting eligibility criteria.</li>
+            <li><strong>Comparator:</strong> Patients who initiate Treatment A will be compared to those who initiate Treatment B.</li>
+            <li><strong>"Intention-to-Treat" Principle:</strong> Patients will be assigned to their initial treatment strategy group based on the first treatment received after meeting eligibility, regardless of subsequent treatment modifications or discontinuations.</li>
+        </ul>
+
+        <h3>2.3. Time Zero (Trial Entry)</h3>
+        <ul>
+            <li><strong>Definition:</strong> Time zero for each patient will be defined as the date of initiation of either Treatment A or Treatment B, provided they meet all eligibility criteria at or prior to this date. This is the "start of follow-up" for the target trial.</li>
+        </ul>
+
+        <h3>2.4. Outcomes</h3>
+        <ul>
+            <li><strong>Primary Outcome:</strong>
+                <ul>
+                    <li><strong>Overall Survival (OS):</strong> Time from time zero until death from any cause. Censored at the end of study follow-up or last known contact.</li>
+                </ul>
+            </li>
+            <li><strong>Secondary Outcomes:</strong>
+                <ul>
+                    <li><strong>Disease Progression-Free Survival (PFS):</strong> Time from time zero until documented disease progression (based on clinical, radiological, or pathological evidence) or death from any cause, whichever occurs first. Censored at the end of study follow-up or last known contact. (Requires detailed progression data, which may be challenging in observational datasets).</li>
+                    <li><strong>Treatment-Related Adverse Events:</strong> Incidence of severe (Grade 3+) adverse events attributed to treatment (if reliably captured in the data).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2.5. Follow-up</h3>
+        <ul>
+            <li><strong>Duration:</strong> Patients will be followed from time zero until the primary outcome event, end of study follow-up (e.g., December 31, 2024), or loss to follow-up, whichever comes first.</li>
+            <li><strong>Censoring:</strong> Patients will be censored at the date of last contact or end of study follow-up if the outcome event has not occurred.</li>
+        </ul>
+
+        <h2>3. Data Sources and Extraction</h2>
+        <ul>
+            <li><strong>Data Source:</strong> Specify the observational database(s) to be used (e.g., national cancer registries linked to administrative claims, large integrated healthcare system EHRs, specific hospital databases).</li>
+            <li><strong>Data Elements:</strong>
+                <ul>
+                    <li>Patient demographics (age, sex, race/ethnicity).</li>
+                    <li>Diagnosis codes (ICD-9/10 for lung cancer, comorbidities).</li>
+                    <li>Treatment codes (procedure codes, drug codes for Treatment A and B).</li>
+                    <li>Date of diagnosis, treatment initiation, progression, and death.</li>
+                    <li>Baseline clinical characteristics (e.g., ECOG performance status, tumor histology, stage, molecular markers if available).</li>
+                    <li>Healthcare utilization data (hospitalizations, outpatient visits).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>4. Statistical Analysis Plan</h2>
+        <h3>4.1. Causal Contrast and Exchangeability</h3>
+        <ul>
+            <li>The goal is to estimate the average treatment effect of Treatment A versus Treatment B.</li>
+            <li>To achieve exchangeability (i.e., that the groups are comparable as if randomized), confounding will be addressed.</li>
+        </ul>
+
+        <h3>4.2. Handling Time-Varying Confounders</h3>
+        <ul>
+            <li><strong>Cloned Censoring and Weighting (Marginal Structural Models - MSM):</strong> This is the preferred method for handling time-varying confounders affected by prior treatment.
+                <ul>
+                    <li><strong>Step 1: Cloning:</strong> Create a "cloned" dataset where each patient is represented multiple times, once for each treatment strategy they could have initiated at time zero.</li>
+                    <li><strong>Step 2: Censoring:</strong> Apply censoring rules to mimic the "no switching" assumption of an RCT. Patients who switch treatments will be censored from their initial treatment group at the time of switching.</li>
+                    <li><strong>Step 3: Inverse Probability of Treatment Weighting (IPTW):</strong> Calculate weights to balance baseline and time-varying confounders between the treatment groups.
+                        <ul>
+                            <li>Weights will be estimated using logistic regression models for the probability of receiving Treatment A (or B) at time zero, conditional on baseline confounders, and for the probability of remaining on the initial treatment strategy, conditional on baseline and time-varying confounders.</li>
+                            <li>Stabilized weights will be used to reduce variability.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Step 4: Outcome Model:</strong> A weighted Cox proportional hazards model will be used to estimate the hazard ratio for OS and PFS, with the treatment indicator as the primary exposure, accounting for the IPTW.</li>
+                </ul>
+            </li>
+            <li><strong>G-computation (Alternative/Sensitivity Analysis):</strong> If MSMs are not feasible or for sensitivity analysis, G-computation could be used. This involves fitting models for treatment assignment and outcome, then standardizing the outcome across treatment groups.</li>
+        </ul>
+
+        <h3>4.3. Baseline Confounder Adjustment</h3>
+        <ul>
+            <li>For baseline confounders not addressed by IPTW (or if IPTW is not used), standard regression adjustment (e.g., Cox regression) will be employed.</li>
+            <li>Potential baseline confounders include: age, sex, race/ethnicity, comorbidities (e.g., Charlson Comorbidity Index), cancer stage, histology, performance status, and prior treatments for other conditions.</li>
+        </ul>
+
+        <h3>4.4. Sensitivity Analyses</h3>
+        <ul>
+            <li><strong>Unmeasured Confounding:</strong> Conduct sensitivity analyses to assess the potential impact of unmeasured confounding (e.g., using E-values).</li>
+            <li><strong>Misclassification:</strong> Evaluate the impact of potential misclassification of outcomes or exposures.</li>
+            <li><strong>Varying Time Windows:</strong> Test the robustness of results to different definitions of the treatment initiation window.</li>
+            <li><strong>Alternative Analytic Methods:</strong> Compare results from MSMs with other methods like propensity score matching or stratification, if appropriate, for baseline confounding.</li>
+        </ul>
+
+        <h3>4.5. Statistical Software</h3>
+        <ul>
+            <li>Statistical analyses will be performed using appropriate software (e.g., R, SAS, Python with `pandas`, `statsmodels`, `lifelines`).</li>
+        </ul>
+
+        <h2>5. Ethical Considerations</h2>
+        <ul>
+            <li><strong>Institutional Review Board (IRB) Approval:</strong> The study protocol will be submitted to and approved by the relevant IRB.</li>
+            <li><strong>Data Privacy:</strong> All patient data will be de-identified and handled in accordance with privacy regulations (e.g., HIPAA).</li>
+            <li><strong>Transparency:</strong> The study design, methods, and results will be reported transparently.</li>
+        </ul>
+
+        <h2>6. Limitations</h2>
+        <ul>
+            <li><strong>Data Availability and Quality:</strong> Reliance on observational data means that certain clinical variables (e.g., detailed performance status, specific molecular markers, precise progression dates) may be missing or inconsistently recorded.</li>
+            <li><strong>Residual Confounding:</strong> Despite sophisticated methods, unmeasured confounding remains a possibility in observational studies.</li>
+            <li><strong>Misclassification Bias:</strong> Errors in coding or data entry can lead to misclassification of exposures, outcomes, or confounders.</li>
+            <li><strong>Generalizability:</strong> Findings are generalizable to the population reflected in the specific observational database used.</li>
+        </ul>
+
+        <h2>7. Timeline and Resources</h2>
+        <ul>
+            <li><strong>Phase 1: Protocol Development and IRB Submission</strong> (2-3 months)</li>
+            <li><strong>Phase 2: Data Extraction and Cleaning</strong> (3-6 months, depending on data complexity)</li>
+            <li><strong>Phase 3: Statistical Analysis</strong> (4-6 months)</li>
+            <li><strong>Phase 4: Manuscript Preparation and Dissemination</strong> (2-3 months)</li>
+        </ul>
+        <p><strong>Resources:</strong> Access to the specified observational database, statistical software, and personnel with expertise in epidemiology, biostatistics, and clinical oncology.</p>
+
+        <h2>8. Dissemination Plan</h2>
+        <ul>
+            <li>Results will be submitted for publication in peer-reviewed medical journals.</li>
+            <li>Findings will be presented at relevant scientific conferences.</li>
+            <li>Summary of findings may be shared with patient advocacy groups or clinical guideline committees.</li>
+        </ul>
+    </div>
+</body>
+</html>
